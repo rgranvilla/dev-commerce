@@ -20,19 +20,19 @@ Também, como dito anteriormente, faremos uso do Turborepo, principalmente pela 
 
 O sistema também deverá ser configurado para manter uma padronização de nosso código e commits, além de ter uma integração e entregas contínuas. Assim, iremos adotar as seguintes libs:
 
-[x] - Turborepo
+[ x ] - Turborepo
 
-[x] - Typescrypt
+[ x ] - Typescrypt
 
-[x] - Eslint
+[ x ] - Eslint
 
-[x] - Prettier
+[ x ] - Prettier
 
-[x] - Husky
+[ x ] - Husky
 
-[x] - Commitlint
+[ x ] - Commitlint
 
-[x] - Commitezen
+[ x ] - Commitezen
 
 &nbsp;
 
