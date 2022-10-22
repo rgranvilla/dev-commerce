@@ -12,8 +12,6 @@ Conforme formos avançando com o desenvolvimento de nossas aplicações cada uma
 
 ## Dev-Commerce (Monorepo)
 
----
-
 &nbsp;
 
 O projeto, como já dito, será estruturado em um sistema monorepo, uma vez que essa estrutura garante um melhor gerenciamento das dependências, reutilização de código de pacotes compartilhados, configurações de (Eslint, TSconfig, etc).
@@ -36,8 +34,6 @@ O sistema também deverá ser configurado para manter uma padronização de noss
 &nbsp;
 
 ### Observações finais
-
----
 
 Conforme nosso projeto for escalando, poderemos tomar decisões diferentes, talvez migrando o projeto para uma estrutura micro frontend, aumentando a sua complexidade e ganhando performance nas aplicações.
 
