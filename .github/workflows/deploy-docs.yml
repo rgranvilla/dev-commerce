@@ -1,0 +1,36 @@
+name: Deploy Storybook
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build Storybook
+        run: yarn workspace @dev-commerce/dev-commerce-ui build-storybook
+
+      - name: Deploy Storybook
+        run: yarn workspace @dev-commerce/dev-commerce-ui deploy-storybook -- --ci --existing-output-dir=storybook-static
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN}}
