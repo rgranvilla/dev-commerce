@@ -46,10 +46,10 @@ Conforme nosso projeto for escalando, poderemos tomar decisões diferentes, talv
 
 Utilizaremos para a construção de nosso design system o framework React, sendo que os seus componentes deverão atender a requisitos de acessibilidade, ter cobertura de teste adequada e possuir documentação clara, para isso iremos adotar as seguintes libs.
 
-- Vite
-- ReactJS
-- Typescript
-- Tailwindcss
-- Radix UI
-- Vitest
-- Storybook
+- [ ] Vite
+- [ ] ReactJS
+- [ ] Typescript
+- [ ] Tailwindcss
+- [ ] Radix UI
+- [ ] Vitest
+- [ ] Storybook
