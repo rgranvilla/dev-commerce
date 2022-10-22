@@ -22,6 +22,7 @@
     "eslint-config-custom": "*",
     "husky": "^8.0.0",
     "prettier": "latest",
+    "typescript": "^4.6.4",
     "turbo": "latest"
   },
   "engines": {
