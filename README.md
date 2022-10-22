@@ -12,8 +12,6 @@ Conforme formos avançando com o desenvolvimento de nossas aplicações cada uma
 
 ## Dev-Commerce (Monorepo)
 
-&nbsp;
-
 O projeto, como já dito, será estruturado em um sistema monorepo, uma vez que essa estrutura garante um melhor gerenciamento das dependências, reutilização de código de pacotes compartilhados, configurações de (Eslint, TSconfig, etc).
 
 Além destas vantagens técnicas, a facilidade de realizar pesquisas entre todos os projetos e a alteração cruzada de código nos permite uma maior agilidade e entregas mais rápidas.
@@ -22,14 +20,19 @@ Também, como dito anteriormente, faremos uso do Turborepo, principalmente pela 
 
 O sistema também deverá ser configurado para manter uma padronização de nosso código e commits, além de ter uma integração e entregas contínuas. Assim, iremos adotar as seguintes libs:
 
-- Turborepo
-- Typescrypt
-- Eslint
-- Prettier
-- Husky
-- Commitlint
-- Commitezen
-- Cz Conventional Changelog
+[x] - Turborepo
+
+[x] - Typescrypt
+
+[x] - Eslint
+
+[x] - Prettier
+
+[x] - Husky
+
+[x] - Commitlint
+
+[x] - Commitezen
 
 &nbsp;
 
