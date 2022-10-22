@@ -1,73 +1,56 @@
-# Turborepo starter
+# **Dev-Commerce**
 
-This is an official Yarn v1 starter turborepo.
+O Dev-Commerce destina-se a criação de uma plataforma de e-commerce, utilizando as ferramentas ReactJs, React Native, NextJs e NodeJs.
 
-## What's inside?
+O intuito deste projeto é colocar em prática os aprendizados ao longa da minha jornada e compartilhar através do canal Devtrails no youtube todo o processo de sua criação.
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/) as a package manager. It includes the following packages/apps:
+Nele iremos criar um sistema monorepo utilizando para isso o Turborepo da Vercel em sua gestão. O sistema irá contar com uma estrutura contendo, o design system da aplicação, módulo front-end web, módulo front-end mobile (android e ios), server e container de estados. Utilizaremos também a integração contínua e entrega contínua, reforçando a automação na compilação, teste e implantação de aplicativos
 
-### Apps and Packages
+Conforme formos avançando com o desenvolvimento de nossas aplicações cada uma das escolhas tomadas serão defendidas visando a performance, qualidade do código, manutenibilidade, documentação e testes.
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+&nbsp;
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Dev-Commerce (Monorepo)
 
-### Utilities
+---
 
-This turborepo has some additional tools already setup for you:
+&nbsp;
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+O projeto, como já dito, será estruturado em um sistema monorepo, uma vez que essa estrutura garante um melhor gerenciamento das dependências, reutilização de código de pacotes compartilhados, configurações de (Eslint, TSconfig, etc).
 
-### Build
+Além destas vantagens técnicas, a facilidade de realizar pesquisas entre todos os projetos e a alteração cruzada de código nos permite uma maior agilidade e entregas mais rápidas.
 
-To build all apps and packages, run the following command:
+Também, como dito anteriormente, faremos uso do Turborepo, principalmente pela sua performance e facilidade de uso e configuração. Tendo como princípio básico de nunca recalcular o trabalho que já foi realizado antes, nosso sistema ganha velocidade ao realizar as operações em cima apenas do que sofreu alguma alteração em código. Outras vantagens são a execução paralela, sem desperdiçar CPUs ociosas, pipelines de tarefas e cache remoto, permitindo o CI/CD com compilações ainda mais rápidas.
 
-```
-cd my-turborepo
-yarn run build
-```
+O sistema também deverá ser configurado para manter uma padronização de nosso código e commits, além de ter uma integração e entregas contínuas. Assim, iremos adotar as seguintes libs:
 
-### Develop
+- Turborepo
+- Typescrypt
+- Eslint
+- Prettier
+- Husky
+- Commitlint
+- Commitezen
+- Cz Conventional Changelog
 
-To develop all apps and packages, run the following command:
+&nbsp;
 
-```
-cd my-turborepo
-yarn run dev
-```
+### Observações finais
 
-### Remote Caching
+---
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+Conforme nosso projeto for escalando, poderemos tomar decisões diferentes, talvez migrando o projeto para uma estrutura micro frontend, aumentando a sua complexidade e ganhando performance nas aplicações.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+&nbsp;
 
-```
-cd my-turborepo
-npx turbo login
-```
+# Design System (dev-commerce-ui)
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+Utilizaremos para a construção de nosso design system o framework React, sendo que os seus componentes deverão atender a requisitos de acessibilidade, ter cobertura de teste adequada e possuir documentação clara, para isso iremos adotar as seguintes libs.
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+- Vite
+- ReactJS
+- Typescript
+- Tailwindcss
+- Radix UI
+- Vitest
+- Storybook
