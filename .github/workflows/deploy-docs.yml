@@ -11,18 +11,17 @@ jobs:
     name: Build and Deploy
     timeout-minutes: 15
     runs-on: ubuntu-latest
-
     env:
-        TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-        TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
     steps:
-      - name: Check out code
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
 
-      - name: Setup Node.js enviroment
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -36,4 +35,5 @@ jobs:
 
       - name: Deploy Storybook
         run: yarn workspace @dev-commerce/dev-commerce-ui deploy-storybook -- --ci --existing-output-dir=storybook-static
-        
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.TURBO_TOKEN}}
