@@ -36,4 +36,4 @@ jobs:
       - name: Deploy Storybook
         run: yarn workspace @dev-commerce/dev-commerce-ui deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.TURBO_TOKEN}}
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN}}
