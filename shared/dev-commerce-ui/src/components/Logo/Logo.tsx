@@ -11,7 +11,6 @@ function Logo({
   short = false,
   size = 40,
 }: LogoProps) {
-  console.log('test remote caching');
   return (
     <div className={`w-fit h-fit`}>
       <svg
