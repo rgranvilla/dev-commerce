@@ -5,6 +5,13 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
+    'storybook-addon-turbo-build',
+    {
+      name: 'storybook-addon-turbo-build',
+      options: {
+        optimizationLevel: 2,
+      },
+    },
   ],
   framework: '@storybook/react',
   core: {
