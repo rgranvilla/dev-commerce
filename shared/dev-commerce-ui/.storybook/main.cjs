@@ -17,6 +17,7 @@ module.exports = {
   core: {
     builder: '@storybook/builder-vite',
   },
+  reactOptions: { legacyRootApi: true },
   features: {
     storyStoreV7: true,
   },
