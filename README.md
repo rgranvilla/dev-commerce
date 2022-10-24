@@ -10,8 +10,6 @@ Conforme formos avançando com o desenvolvimento de nossas aplicações cada uma
 
 &nbsp;
 
-teste de velocidade do deploy
-
 ## Dev-Commerce (Monorepo)
 
 O projeto, como já dito, será estruturado em um sistema monorepo, uma vez que essa estrutura garante um melhor gerenciamento das dependências, reutilização de código de pacotes compartilhados, configurações de (Eslint, TSconfig, etc).
