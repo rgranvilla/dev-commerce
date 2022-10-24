@@ -9,13 +9,13 @@ module.exports = {
     {
       name: 'storybook-addon-turbo-build',
       options: {
-        optimizationLevel: 2,
+        optimizationLevel: 3,
       },
     },
   ],
   framework: '@storybook/react',
   core: {
-    builder: 'storybook-addon-turbo-build',
+    builder: '@storybook/builder-vite',
   },
   features: {
     storyStoreV7: true,
