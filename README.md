@@ -50,7 +50,5 @@ Utilizaremos para a construção de nosso design system o framework React, sendo
 - [x] ReactJS
 - [x] Typescript
 - [x] Tailwindcss
-- [ ] Radix UI
-- [ ] Vitest
 - [x] Storybook
 - [x] Workflow CI
